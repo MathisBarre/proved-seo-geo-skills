@@ -1,0 +1,15 @@
+{
+  "name": "proved-seo-geo-skills",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Source validation and maintenance utilities for Proved SEO & GEO.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-evidence.mjs && node scripts/validate-skill.mjs",
+    "watch:sources": "node scripts/refresh-source-watch.mjs",
+    "watch:sources:validate": "node scripts/refresh-source-watch.mjs --validate"
+  }
+}

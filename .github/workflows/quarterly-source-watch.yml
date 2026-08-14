@@ -1,0 +1,47 @@
+name: Quarterly source watch
+
+on:
+  schedule:
+    - cron: "17 8 3 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate the fixed source allowlist
+        run: npm run validate
+      - name: Refresh the allowlisted source-watch record
+        run: npm run watch:sources
+      - name: Open a draft review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if git diff --quiet -- reviews/watch; then
+            echo "No source-watch record changed."
+            exit 0
+          fi
+          branch="automation/source-watch-${{ github.run_id }}"
+          git switch -c "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- reviews/watch
+          git commit -m "chore: record quarterly source watch"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+          gh pr create \
+            --draft \
+            --base "$BASE_BRANCH" \
+            --head "$branch" \
+            --title "chore: quarterly source watch" \
+            --body "Automated allowlisted source status check. Review source changes and candidate research before changing any recommendation. This PR cannot change the skill, governance, workflows, scripts, dependencies, or evidence policy."

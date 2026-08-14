@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+
+# Local source-watch scratch output. Quarterly review records are versioned under reviews/.
+.source-watch/

@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "lastReviewed": "2026-08-14",
+  "scope": "Google Search and Bing only; IndexNow is retained for Bing-adjacent URL-change notification.",
+  "allowedHosts": [
+    "developers.google.com",
+    "support.google.com",
+    "www.bing.com",
+    "blogs.bing.com",
+    "www.indexnow.org",
+    "github.com",
+    "ahrefs.com",
+    "www.semrush.com",
+    "seranking.com",
+    "www.pewresearch.org",
+    "www.growth-memo.com",
+    "arxiv.org",
+    "doi.org"
+  ],
+  "sources": [
+    {
+      "id": "G-ESSENTIALS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Google Search Essentials",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "scope": "Google Search technical requirements and spam policies.",
+      "limitations": "Does not promise crawl, indexing, ranking, or AI feature inclusion.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-AI-OPTIMIZATION",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "AI features and your website: generative AI optimization guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "scope": "Google's published guidance for generative search features, including rejected AI-only tactics.",
+      "limitations": "Describes fundamentals and non-requirements; it does not guarantee a citation or ranking.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-AI-FEATURES",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "AI features and your website",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "scope": "Eligibility conditions for pages supporting Google AI features.",
+      "limitations": "Eligibility is not inclusion, prominence, citation, traffic, or conversion.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-AI-PERFORMANCE",
+      "tier": "primary",
+      "publisher": "Google Search Console Help",
+      "title": "Generative AI performance report (Search)",
+      "url": "https://support.google.com/webmasters/answer/16984139?hl=en",
+      "scope": "Availability, metrics, supported generative Search features, and report dimensions for Google Search Console's Generative AI performance report.",
+      "limitations": "The report is rolling out selectively, records organic impressions rather than an answer-level citation audit, and is subject to Search Console data limits.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-HELPFUL",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "scope": "Editorial quality, original value, trust, experience, and freshness cautions.",
+      "limitations": "Principles do not create a mechanical content-length or format formula.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-CRAWLABLE-LINKS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Make links crawlable",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "scope": "Discoverable link markup and anchor text.",
+      "limitations": "A crawlable link does not guarantee discovery or indexing.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-SITEMAPS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Build and submit a sitemap",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "scope": "Sitemap discovery role and limits.",
+      "limitations": "A sitemap is a discovery signal, not an indexing guarantee.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-ROBOTS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Introduction to robots.txt",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "scope": "Crawl management and the distinction from search-result removal.",
+      "limitations": "Does not replace page-level indexing controls or access control.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-CANONICALS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Consolidate duplicate URLs",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "scope": "Canonicalization signals and duplicate URL consolidation.",
+      "limitations": "Google makes the final canonical selection.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-JS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "JavaScript SEO basics",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "scope": "Google's crawl, render, and index model for JavaScript sites.",
+      "limitations": "JavaScript can be processed but still needs technical validation; the page does not assert an interactive-ranking benefit.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-TITLES",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Influencing title links in search results",
+      "url": "https://developers.google.com/search/docs/appearance/title-link",
+      "scope": "Distinct descriptive titles and Google's title-link generation.",
+      "limitations": "Google can use several signals to generate a displayed title link.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-SNIPPETS",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Control your snippets in search results",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "scope": "Visible content and meta descriptions as snippet inputs.",
+      "limitations": "There is no official fixed meta-description length or snippet guarantee.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-STRUCTURED",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "General structured data guidelines",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "scope": "Visible-content alignment and rich-result eligibility.",
+      "limitations": "Structured data does not guarantee a rich result, a general ranking boost, or an AI citation.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-IMAGES",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Google Images SEO best practices",
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "scope": "Image discovery, markup, and descriptive context.",
+      "limitations": "Image implementation does not guarantee image or web-search placement.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-VIDEO",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Video SEO best practices",
+      "url": "https://developers.google.com/search/docs/appearance/video",
+      "scope": "Video watch-page and discovery requirements.",
+      "limitations": "Eligibility for video features is not display or citation certainty.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "G-DATES",
+      "tier": "primary",
+      "publisher": "Google Search Central",
+      "title": "Publication dates in Google Search",
+      "url": "https://developers.google.com/search/docs/appearance/publication-dates",
+      "scope": "Visible and structured publication/modified-date consistency.",
+      "limitations": "A date is not a freshness or ranking lever by itself.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "B-GUIDELINES",
+      "tier": "primary",
+      "publisher": "Bing Webmaster",
+      "title": "Bing Webmaster Guidelines",
+      "url": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a",
+      "scope": "Bing technical, content, structured-data, rendering, and quality guidance.",
+      "limitations": "Guidelines do not guarantee Bing rank, Copilot grounding, citation, or traffic.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "B-AI-PERFORMANCE",
+      "tier": "primary",
+      "publisher": "Bing Webmaster",
+      "title": "AI Performance",
+      "url": "https://www.bing.com/webmasters/help/ai-performance-9f8e7d6c",
+      "scope": "Bing reporting for observed AI grounding/citation activity.",
+      "limitations": "A report is a measurement, not a causal ranking explanation or click record.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "B-ROBOTS",
+      "tier": "primary",
+      "publisher": "Bing Webmaster",
+      "title": "How to create a robots.txt file",
+      "url": "https://www.bing.com/webmasters/help/how-to-create-a-robots-txt-file-cb7c31ec",
+      "scope": "Bing crawl rules and robots.txt limitations.",
+      "limitations": "Robots.txt does not by itself ensure search-result removal.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "B-META-ROBOTS",
+      "tier": "primary",
+      "publisher": "Bing Webmaster",
+      "title": "Robots meta tags and attributes Bing supports",
+      "url": "https://www.bing.com/webmasters/help/robots-meta-tags-and-attributes-that-bing-supports-5198d240",
+      "scope": "Bing page-level indexing and cache/grounding controls.",
+      "limitations": "Controls constrain use; they do not create a positive eligibility signal.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "B-SITEMAPS",
+      "tier": "primary",
+      "publisher": "Bing Webmaster Blog",
+      "title": "Keeping Content Discoverable with Sitemaps in AI-Powered Search",
+      "url": "https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search",
+      "scope": "Canonical sitemap URLs, truthful lastmod values, and sitemap freshness for Bing.",
+      "limitations": "Discovery signals do not guarantee indexing or AI use.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "INDEXNOW",
+      "tier": "primary",
+      "publisher": "IndexNow",
+      "title": "IndexNow documentation",
+      "url": "https://www.indexnow.org/documentation",
+      "scope": "URL-change notification protocol supported by Bing and partners.",
+      "limitations": "A successful submission acknowledges receipt, not crawl or indexation.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "R-MARKETINGSKILLS",
+      "tier": "reference skill",
+      "publisher": "Corey Haines / marketingskills",
+      "title": "AI SEO skill",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/7868cb9251fad80a73d26e488a5ad5f6c4a9f335/skills/ai-seo/SKILL.md",
+      "scope": "Reference-skill audit input; useful as a source of candidate practices and citations.",
+      "limitations": "Its unlinked thresholds and platform claims are not adopted without original evidence.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "R-WEB-QUALITY-SKILLS",
+      "tier": "reference skill",
+      "publisher": "Addy Osmani / web-quality-skills",
+      "title": "SEO skill",
+      "url": "https://github.com/addyosmani/web-quality-skills/blob/95d6e255afe1596b557d7a8498517884438f5b3a/skills/seo/SKILL.md",
+      "scope": "Reference-skill audit input for technical and quality-check patterns.",
+      "limitations": "A useful checklist is not primary proof of a ranking factor.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "R-CODEX-SEO",
+      "tier": "reference skill",
+      "publisher": "AgriciDaniel / codex-seo",
+      "title": "codex-seo skill suite",
+      "url": "https://github.com/AgriciDaniel/codex-seo/tree/97c59bcdac3c9538bf0e3ae456c1e73aa387f85a/skills",
+      "scope": "Reference-skill audit input covering technical, page, content, and GEO modules.",
+      "limitations": "Treat internal scores and uncited numeric rules as heuristics until independently supported.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "R-CLAUDE-SEO",
+      "tier": "reference skill",
+      "publisher": "AgriciDaniel / claude-seo",
+      "title": "claude-seo upstream skill suite",
+      "url": "https://github.com/AgriciDaniel/claude-seo/tree/09d37c7b66ed3ca9c6efbdb765a805a6c76a8f01/skills",
+      "scope": "Upstream comparison source for the codex-seo audit.",
+      "limitations": "Its source labels improve traceability but its thresholds still need source-by-source review.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-AHREFS-AIO-RANKS",
+      "tier": "secondary observation",
+      "publisher": "Ahrefs",
+      "title": "38% of AI Overview Citations Pull From the Top 10",
+      "url": "https://ahrefs.com/blog/ai-overview-citations-top-10/",
+      "scope": "Observed relationship between Google AI Overview citations and organic results in a stated dataset.",
+      "method": "Vendor observational analysis; read the article for its exact sample, market, collection method, and date.",
+      "limitations": "Correlation, source parsing, query matching, and changing AI surfaces limit causal interpretation.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-AHREFS-VIDEO",
+      "tier": "secondary observation",
+      "publisher": "Ahrefs",
+      "title": "Top Brand Visibility Factors in AI Search",
+      "url": "https://ahrefs.com/blog/ai-brand-visibility-correlations/",
+      "scope": "Brand/video mention correlations in a vendor visibility dataset.",
+      "method": "Vendor correlation study; see its published selection and measurement criteria.",
+      "limitations": "Brand scale and selection can confound results; it does not test embedding a video on a landing page.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-SEM-CLARITY",
+      "tier": "secondary observation",
+      "publisher": "Semrush",
+      "title": "How We Built a Content Optimization Tool for AI Search",
+      "url": "https://www.semrush.com/blog/content-optimization-ai-search-study/",
+      "scope": "Observed score differences between cited URLs and a vendor-defined comparison group.",
+      "method": "Vendor observational study using proprietary content scores and multiple AI/search surfaces.",
+      "limitations": "Scores, comparator, and weighting are not universal or fully independently auditable.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-SEMRUSH-GHOST-CITATIONS",
+      "tier": "secondary observation",
+      "publisher": "Semrush",
+      "title": "The Ghost Citations Study",
+      "url": "https://www.semrush.com/blog/the-ghost-citations-study/",
+      "scope": "Difference between source citation and explicit brand mention in observed AI answers.",
+      "method": "Vendor dataset of prompts, countries, engines, citations, and mentions; inspect the publication for current detail.",
+      "limitations": "Bounded sample and vendor measurement mean it should guide KPIs, not causal copy rules.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-SE-RANKING-VOLATILITY",
+      "tier": "secondary observation",
+      "publisher": "SE Ranking",
+      "title": "AI Mode research: Sources, volatility, and differences from AIO and organic search",
+      "url": "https://seranking.com/blog/ai-mode-research/",
+      "scope": "Volatility and overlap observations for Google AI Mode and AI Overviews.",
+      "method": "Vendor observations over a stated keyword set and repeated parses.",
+      "limitations": "Single-market, time-bounded collection; changing engine behavior prevents general causal conclusions.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-PEW-CLICKS",
+      "tier": "secondary observation",
+      "publisher": "Pew Research Center",
+      "title": "Google users are less likely to click on links when an AI summary appears in search results",
+      "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+      "scope": "Observed click behavior in a stated US browsing panel.",
+      "method": "Independent panel observation; see source for sample and collection window.",
+      "limitations": "AIO-triggering queries are not random and behavior may change with product design and market.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-GROWTH-MEMO-ORIGINAL-DATA",
+      "tier": "secondary observation",
+      "publisher": "Growth Memo / Kevin Indig",
+      "title": "Why most original data never gets cited",
+      "url": "https://www.growth-memo.com/p/why-most-original-data-never-gets",
+      "scope": "Exploratory audit of cited pages and original data in a stated sample.",
+      "method": "Small manually audited observational dataset; read the article for sample and concentration details.",
+      "limitations": "Very small target group and concentrated citations; it suggests an original-research hypothesis, not a mandate.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-KDD-GEO",
+      "tier": "secondary observation",
+      "publisher": "ACM KDD",
+      "title": "GEO: Generative Engine Optimization",
+      "url": "https://doi.org/10.1145/3637528.3671900",
+      "scope": "Academic experimental work in its own generative-engine benchmark.",
+      "method": "Published research with a defined testbed and interventions.",
+      "limitations": "Its benchmark is not proof of Google Search or Bing ranking/citation factors.",
+      "reviewCadence": "quarterly"
+    },
+    {
+      "id": "S-AIO-FAITHFULNESS",
+      "tier": "secondary observation",
+      "publisher": "Xu, Iqbal, Montgomery",
+      "title": "Measuring Google AI Overviews",
+      "url": "https://arxiv.org/abs/2605.14021",
+      "scope": "Preprint audit of claim support in Google AI Overview results.",
+      "method": "Academic preprint with stated crawl, annotation, and evaluation procedures.",
+      "limitations": "Preprint status, topical sampling, and changing product behavior limit generalization.",
+      "reviewCadence": "quarterly"
+    }
+  ]
+}

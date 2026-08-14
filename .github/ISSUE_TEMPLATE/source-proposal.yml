@@ -1,0 +1,39 @@
+name: Source proposal
+description: Propose a primary source, secondary study, or reference-skill update for review.
+title: "source: "
+labels: ["evidence"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Use the original publication or official documentation page.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Proposed evidence tier
+      options:
+        - primary
+        - secondary observation
+        - reference skill
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Exact claim and scope
+      description: State only what this source supports.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and limits
+      description: Required for a study, experiment, or reference skill.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification proposal
+      description: Explain how this could be checked on a real site or in a test.

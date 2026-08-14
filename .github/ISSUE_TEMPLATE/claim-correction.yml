@@ -1,0 +1,23 @@
+name: Claim correction
+description: Report an overbroad, outdated, unsupported, or missing-evidence claim.
+title: "claim: "
+labels: ["claim-review"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: File and claim
+      description: Link or name the source ID and wording to review.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Why it needs correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting or conflicting source
+      description: Include original URLs and method/limits where applicable.

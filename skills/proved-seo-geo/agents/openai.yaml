@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proved SEO & GEO"
+  short_description: "Evidence-led Google and Bing SEO"
+  default_prompt: "Use $proved-seo-geo to plan a source-backed Google and Bing SEO improvement."
