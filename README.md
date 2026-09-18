@@ -7,17 +7,15 @@ It covers two connected disciplines:
 - **Technical SEO:** discovery, crawlability, indexing controls, sitemaps, canonicals, JavaScript, structured data, images, video, and release publishing.
 - **Content and editorial experience:** landing pages, product pages, articles, release notes, original research, video, images, and interactive tools.
 
-GEO/GIO is treated as part of those fundamentals: make useful information public, clear, crawlable, indexable, and eligible for the surfaces that may show it. It is not a promise of an AI Overview, AI Mode, Copilot grounding result, citation, click, or conversion.
+GEO is treated as part of those fundamentals: make useful information public, clear, crawlable, indexable, and eligible for the surfaces that may show it. It is not a promise of an AI Overview, AI Mode, Copilot grounding result, citation, click, or conversion.
 
 ## Install
 
 After this repository is published, install the bundled skill from its `skills/` directory with your usual Skills CLI workflow. For example:
 
 ```bash
-npx skills add <github-owner>/proved-seo-geo-skills --skill proved-seo-geo
+npx skills add MathisBarre/proved-seo-geo-skills --skill proved-seo-geo
 ```
-
-The exact owner segment will replace `<github-owner>` when the repository is public.
 
 ## What makes a recommendation admissible
 
